@@ -1,4 +1,25 @@
-<app-contacts></app-contacts>
-<app-testcontacts></app-testcontacts>
+<div class='container-fluid'>
 
+    <div *ngIf="pwdCorrect == true">
+        <app-contacts></app-contacts>
+        <app-testcontacts></app-testcontacts>
+    </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <div *ngIf="!pwdCorrect" class='input-group'>
+                    <form class="form-inline" #myForm="ngForm" (submit) = 'addPassword(); myForm.reset()'>
+                        <div class="mx-sm-3">
+                            <input type = 'text' [(ngModel)] = "password" [ngModelOptions]="{standalone: true}" placeholder="Enter the password!">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>       
+                </div>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+
+</div>
