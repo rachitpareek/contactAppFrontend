@@ -1,5 +1,7 @@
 # Contactapp
 
+This project is currently hosted on Heroku (and interacts with a backend I have uploaded in a separate repo). It's available here: https://sleepy-harbor-88090.herokuapp.com/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 ## Development server
